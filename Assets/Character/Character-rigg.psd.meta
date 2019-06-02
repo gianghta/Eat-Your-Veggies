@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: f84db6c5614b56e4fb5fabb67b572ab9
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Character-rigg_0
+    21300002: Character-rigg_1
+    21300004: Character-rigg_2
+    21300006: Character-rigg_3
+    21300008: Character-rigg_4
+    21300010: Character-rigg_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -31,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +75,140 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Character-rigg_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 159
+        width: 55
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.06292162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd356058f9c0434fb59f9a967d6ba7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-rigg_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 200
+        width: 80
+        height: 77
+      alignment: 9
+      pivot: {x: 0.46778432, y: 0.042565484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2e4106334c7bd4d82dda9bc6698367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-rigg_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 130
+        width: 26
+        height: 30
+      alignment: 9
+      pivot: {x: 0.8138956, y: 0.800679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17754197f3fb5f94d902517cc75a968f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-rigg_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 124
+        width: 30
+        height: 40
+      alignment: 9
+      pivot: {x: 0.15636648, y: 0.85437167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd4ab1fc88ce9f439ce323418ee533e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-rigg_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 82
+        width: 18
+        height: 22
+      alignment: 9
+      pivot: {x: 0.57159084, y: 0.89049184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2b3e30670498a439e2bb04b565a54e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-rigg_5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 82
+        width: 18
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5715883, y: 0.87096715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9015f68766830418e77d0b093277db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
