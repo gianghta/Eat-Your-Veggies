@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public GameObject loseScreen;
+    public Text healthDisplay;
+
+    public int health;
     public float speed;
 
     Animator anim;
@@ -15,6 +20,7 @@ public class Player : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        healthDisplay.text = health.ToString();
     }
 
     void Update()
@@ -48,4 +54,18 @@ public class Player : MonoBehaviour
         //Speed of the character movement
         rb.velocity = new Vector2(input * speed, rb.velocity.y);
     }
+
+    public void TakeDamage(int damageAmount)
+    {
+        health -= damageAmount;
+        healthDisplay.text = health.ToString();
+
+        if (health <= 0)
+        {
+            //Destroy player if die and display lose screen
+            loseScreen.SetActive(true);
+            Destroy(gameObject);
+        }
+    }
+
 }
