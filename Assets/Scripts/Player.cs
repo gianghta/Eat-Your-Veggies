@@ -10,14 +10,21 @@ public class Player : MonoBehaviour
 
     public int health;
     public float speed;
+    float input;
 
     Animator anim;
     Rigidbody2D rb;
-    float input;
+    AudioSource source;
+
+    public float startDashTime;
+    private float dashTime;
+    public float extraSpeed;
+    private bool isDashing;
 
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         healthDisplay.text = health.ToString();
@@ -44,6 +51,23 @@ public class Player : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isDashing == false)
+        {
+            speed += extraSpeed;
+            isDashing = true;
+            dashTime = startDashTime;
+        }
+
+        if (dashTime <= 0 && isDashing == true)
+        {
+            isDashing = false;
+            speed -= extraSpeed;
+        }
+        else
+        {
+            dashTime -= Time.deltaTime;
+        }
     }
 
     void FixedUpdate()
@@ -57,6 +81,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
+        source.Play();
         health -= damageAmount;
         healthDisplay.text = health.ToString();
 
